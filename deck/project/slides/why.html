@@ -1,0 +1,32 @@
+<section id="why" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">なぜ役割を分けるのか</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">役割を分けると得られる 3 つのこと</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:14px;padding:32px 36px;background:#ECE7DB;border-top:8px solid #C4521F;height:410px">
+      <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">同時に調べる</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">待ち時間が<br>短くなる</h3>
+      <p style="font-size:28px;line-height:1.5">4 つの問いを、4 つの<br>サブエージェントが同時に調べる</p>
+      <p style="font-size:24px;line-height:1.5;color:#5B6470">Anthropic は並列の実行で、<br>調査の時間を最大 90% 減らした</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;padding:32px 36px;background:#ECE7DB;border-top:8px solid #1F6F78;height:410px">
+      <p style="font-size:24px;font-weight:700;color:#1F6F78;letter-spacing:2px">調査を別のコンテキストで行う</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">元のセッションの<br>性能が落ちにくい</h3>
+      <p style="font-size:28px;line-height:1.5">調べた中身は元のセッションに<br>入らず、要約だけが戻る</p>
+      <p style="font-size:24px;line-height:1.5;color:#5B6470">コンテキストが埋まるほど、<br>Claude の性能は落ちる</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:14px;padding:32px 36px;background:#ECE7DB;border-top:8px solid #1C2430;height:410px">
+      <p style="font-size:24px;font-weight:700;color:#1C2430;letter-spacing:2px">作る役と確かめる役を分ける</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">誤りが、資料に<br>入る前に見つかる</h3>
+      <p style="font-size:28px;line-height:1.5">調査をしていないサブエージェント<br>が、数値を出所と比べる</p>
+      <p style="font-size:24px;line-height:1.5;color:#5B6470">エージェントは、自分が作った<br>ものを採点すると高く評価する</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:20px 36px;background:#1C2430">
+    <p style="font-size:28px;line-height:1.6;color:#F6F3EC">その代わり、使うトークンの合計は増える。Anthropic の調査システムは、チャットの約 15 倍を使う。</p>
+    <p style="font-size:28px;line-height:1.6;color:#F6F3EC">同時に進められて、結果の価値が費用を上回るタスクに使う。単純な作業には低価格のモデルを割り当てる。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Best practices / Sub-agents / Manage costs(code.claude.com)、multi-agent research system / harness design(anthropic.com/engineering)</p>
+  <aside>[0:02] 役割を分ける理由を、得られることの側から 3 つ話す。1 つ目は待ち時間。4 つの問いを 4 つのサブエージェントが同時に調べるので、順番に調べるより早く終わる。Anthropic の調査システムの記事は、並列の実行で、複雑な問いの調査時間を最大 90% 減らしたと書いている。2 つ目は元のセッションの性能。Best practices は "Claude's context window fills up fast, and performance degrades as it fills." と書いている。サブエージェントは別のコンテキストで Web のページを読むので、読んだ中身は元のセッションに入らず、要約だけが戻る。元のセッションは、空いているコンテキストを構成と資料づくりに使える。3 つ目は誤りの発見。ハーネスの記事は、エージェントは自分が作ったものを採点すると高く評価すると書き、作る役と採点する役を分けることが強い対策になると書いている。Best practices の最初の項目も、Claude に、自分が作ったものを確かめる手段を渡すことで、確かめる手段にはテスト、ビルド、スクリーンショットの比較、別のサブエージェントによる確認を挙げている。research-deck の手順 3 は、別のサブエージェントによる確認に当たる。下の帯は費用の話。サブエージェントは自分の分のトークンを使うので、合計のトークンは増える。Anthropic の調査システムは、チャットの約 15 倍のトークンを使う。記事は、結果の価値が費用を上回るタスクに使うと書いている。減るのは元のセッションのコンテキストに入る量で、合計のトークンではない。費用を抑える方法として、Sub-agents のページは、作業を速くて低価格のモデルに割り当てることを挙げている。Manage costs のページは、計画を先に作る plan mode が、方向を誤ったあとのやり直しを防ぐと書いている。</aside>
+</section>

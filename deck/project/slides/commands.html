@@ -1,0 +1,42 @@
+<section id="commands" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Claude Code チームの使い方</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">覚えておくコマンド 8 つ</h2>
+  </div>
+  <div style="display:flex;flex-direction:column">
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #1C2430;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/btw</p>
+      <p style="font-size:30px">会話の履歴に残さずに質問する</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/rewind</p>
+      <p style="font-size:30px">会話とコードを前の時点へ戻す</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/context</p>
+      <p style="font-size:30px">コンテキストの使用量を表示する</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/simplify</p>
+      <p style="font-size:30px">4 つのエージェントが、変更したコードを並列で見直して直す</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/batch</p>
+      <p style="font-size:30px">大きな変更を 5〜30 個の作業に分け、並列で進める</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/fewer-permission-prompts</p>
+      <p style="font-size:30px">過去の会話を調べ、許可するコマンドの一覧を作る</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/insights</p>
+      <p style="font-size:30px">自分の使い方を分析したレポートを作る</p>
+    </div>
+    <div style="display:grid;grid-template-columns:540px 1fr;gap:32px;padding:11px 0px;border-top:2px solid #D3CCBC;border-bottom:2px solid #1C2430;align-items:center">
+      <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/loop</p>
+      <p style="font-size:30px">決めた間隔で同じ指示を繰り返す</p>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Commands(code.claude.com)/ Claude Code power user tips(support.claude.com)</p>
+  <aside>Bash が変更したファイルは、/rewind では戻らない。/simplify と /batch は、Skill として入っているコマンド。</aside>
+</section>

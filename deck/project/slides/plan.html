@@ -1,0 +1,31 @@
+<section id="plan" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Claude Code チームの使い方</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">実装の前に Claude に計画を作らせる</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 64px 1fr 64px 1fr;gap:24px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">1</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">計画を作らせる</h3>
+      <p style="font-size:30px;line-height:1.5">Shift+Tab で<br>plan mode に切り替える</p>
+    </div>
+    <svg aria-label="次へ" width="64" height="64" viewBox="0 0 64 64"><path d="M8 32h44M36 16l16 16-16 16" fill="none" stroke="#C4521F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">2</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">計画を直す</h3>
+      <p style="font-size:30px;line-height:1.5">Ctrl+G で計画を<br>エディタで開く</p>
+    </div>
+    <svg aria-label="次へ" width="64" height="64" viewBox="0 0 64 64"><path d="M8 32h44M36 16l16 16-16 16" fill="none" stroke="#C4521F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">3</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">実装させる</h3>
+      <p style="font-size:30px;line-height:1.5">実装が計画どおりか<br>Claude に確かめさせる</p>
+    </div>
+  </div>
+  <div style="display:flex;gap:32px;align-items:center;padding:28px 36px;background:#1C2430">
+    <p style="font-family:'JetBrains Mono';font-size:40px;font-weight:700;color:#F6F3EC">/clear</p>
+    <p style="font-size:30px;line-height:1.5;color:#F6F3EC">同じ問題を 2 回指摘しても直らなければ、会話を消して新しい指示で始め直す</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Best practices / Permission modes(code.claude.com)</p>
+  <aside>plan mode では、Claude は先に計画を出す。計画が出たら、Ctrl+G を押して自分のエディタで直せる。下の帯は Best practices にある目安。指摘を重ねた会話には失敗したやり方の記録が残るので、会話を消して、分かったことを入れた指示で始め直すほうが早い。間違いを直したあとに「Update your CLAUDE.md so you don't make that mistake again.」と入力すると、Claude は CLAUDE.md に行を足す。</aside>
+</section>

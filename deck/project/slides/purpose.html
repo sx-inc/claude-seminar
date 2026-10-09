@@ -1,0 +1,33 @@
+<section id="purpose" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">今日やること</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">テーマの調査と資料づくりを、<br>Claude Code に任せる</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 64px 1fr 64px 1fr;gap:24px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#ECE7DB;height:320px">
+      <p style="font-size:24px;font-weight:700;color:#5B6470;letter-spacing:2px">自分</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">テーマを入力する</h3>
+      <p style="font-size:30px;line-height:1.5">調べたいテーマを<br>1 行で入力する</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;color:#1F6F78">/research-deck &lt;テーマ&gt;</p>
+    </div>
+    <svg aria-label="次へ" width="64" height="64" viewBox="0 0 64 64"><path d="M8 32h44M36 16l16 16-16 16" fill="none" stroke="#C4521F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#1C2430;height:320px">
+      <p style="font-size:24px;font-weight:700;color:#F2B28F;letter-spacing:2px">Claude Code</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3;color:#F6F3EC">役割を分けて進める</h3>
+      <p style="font-size:30px;line-height:1.5;color:#F6F3EC">サブエージェント 4 つが<br>同時に調べ、別の 1 つが<br>数値を確かめる</p>
+    </div>
+    <svg aria-label="次へ" width="64" height="64" viewBox="0 0 64 64"><path d="M8 32h44M36 16l16 16-16 16" fill="none" stroke="#C4521F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px;background:#ECE7DB;height:320px;border-top:8px solid #1F6F78">
+      <p style="font-size:24px;font-weight:700;color:#1F6F78;letter-spacing:2px">できあがるもの</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">8 枚の資料</h3>
+      <p style="font-size:30px;line-height:1.5">出所を付けた<br>PowerPoint の資料(.pptx)</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:0px 0px 0px 32px;border-left:8px solid #1C2430">
+    <p style="font-size:30px;line-height:1.6">役割を分けた複数の Claude にタスクを進めさせることを、オーケストレーションと呼ぶ。</p>
+    <p style="font-size:30px;line-height:1.6">Anthropic の Research 機能も、調査を複数のサブエージェントに分けて同時に調べさせている。</p>
+    <p style="font-size:30px;line-height:1.6">実習は 2 回行う。2 回目は、Skill を直して自分の業務のテーマで実行する。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: How we built our multi-agent research system(anthropic.com/engineering)、配布した SKILL.md</p>
+  <aside>[0:01] 今日やることは、テーマを Web で調べて PowerPoint の資料にするところまでを、各自の PC で Claude Code に任せること。入力するのは、/research-deck とテーマの 1 行。Claude Code は、配布した Skill の手順に沿って、テーマを 4 つの問いに分け、4 つのサブエージェントに同時に調べさせる。調査をしていない別のサブエージェントが、数値を出所のページと比べる。元のセッションが 8 枚の .pptx を作る。役割を分けた複数の Claude にタスクを進めさせることを、オーケストレーションと呼ぶ。調査を題材にした理由は、Anthropic の公式の事例にある。Anthropic は Research 機能で、リードエージェントが調査を複数のサブエージェントに分け、サブエージェントが並列に調べる構成を使っている。Anthropic の記事は、この構成が社内の評価で単一のエージェントより 90.2% 高い成績だったと書いている。同じ記事は、コーディングのタスクは調査に比べて並列にできる作業が少ないとも書いている。Agent teams の公式ドキュメントも、最初は調査とレビューから始めるよう勧めている。調べた結果を PowerPoint の資料にする部分は、このセミナー用に足した。実習は 2 回行う。1 回目は配布した Skill をそのまま実行し、2 回目は Skill を直して自分の業務のテーマで実行する。</aside>
+</section>

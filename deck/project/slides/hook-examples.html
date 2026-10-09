@@ -1,0 +1,42 @@
+<section id="hook-examples" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">5　振り返り</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">公式ドキュメントに載っている Hook の例 4 つ</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+    <div style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:32px 36px;background:#ECE7DB;align-items:center">
+      <x-icon name="Lock" style="width:64px;height:64px;color:#C4521F"></x-icon>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">ファイルを守る</h3>
+        <p style="font-size:30px;line-height:1.5">.env などの編集を止める</p>
+        <p style="font-family:'JetBrains Mono';font-size:24px;color:#1F6F78">PreToolUse</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:32px 36px;background:#ECE7DB;align-items:center">
+      <x-icon name="Wrench" style="width:64px;height:64px;color:#C4521F"></x-icon>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">コードを整形する</h3>
+        <p style="font-size:30px;line-height:1.5">Claude が編集するたびに整形する</p>
+        <p style="font-family:'JetBrains Mono';font-size:24px;color:#1F6F78">PostToolUse</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:32px 36px;background:#ECE7DB;align-items:center">
+      <x-icon name="Lightbulb" style="width:64px;height:64px;color:#C4521F"></x-icon>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">決まりを読み直させる</h3>
+        <p style="font-size:30px;line-height:1.5">要約のあとに決まりをもう一度渡す</p>
+        <p style="font-family:'JetBrains Mono';font-size:24px;color:#1F6F78">SessionStart + compact</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:72px 1fr;gap:28px;padding:32px 36px;background:#ECE7DB;align-items:center">
+      <x-icon name="PaperPlane" style="width:64px;height:64px;color:#C4521F"></x-icon>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">入力待ちを通知する</h3>
+        <p style="font-size:30px;line-height:1.5">Claude が入力を待ち始めたら通知を出す</p>
+        <p style="font-family:'JetBrains Mono';font-size:24px;color:#1F6F78">Notification</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Automate workflows with hooks(code.claude.com/docs/en/hooks-guide)</p>
+  <aside>[1:18] 今日の実習のように実行に時間がかかるタスクには、右下の「入力待ちを通知する」Hook が使える。公式ドキュメントは、この 4 つの設定例を載せている。「決まりを読み直させる」の Hook は、Claude Code が長い会話を要約したあとに、決まりをもう一度 Claude に渡す。「入力待ちを通知する」の Hook を設定すると、利用者は通知が届くまで別の作業を進められる。</aside>
+</section>

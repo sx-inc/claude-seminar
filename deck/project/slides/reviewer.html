@@ -1,0 +1,34 @@
+<section id="reviewer" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">3　実習 1</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">確かめる役を分けると、誤りが見つかる</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 64px 1fr;gap:32px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px 40px;background:#ECE7DB;height:270px">
+      <p style="font-size:24px;font-weight:700;color:#5B6470;letter-spacing:2px">セッション A</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.2">書く</h3>
+      <p style="font-size:30px;line-height:1.5">コードや資料を作る</p>
+    </div>
+    <svg aria-label="次へ" width="64" height="64" viewBox="0 0 64 64"><path d="M8 32h44M36 16l16 16-16 16" fill="none" stroke="#C4521F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:36px 40px;background:#1C2430;height:270px">
+      <p style="font-size:24px;font-weight:700;color:#F6F3EC;letter-spacing:2px">セッション B</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.2;color:#F6F3EC">確かめる</h3>
+      <p style="font-size:30px;line-height:1.5;color:#F6F3EC">新しいコンテキストで成果物だけを読む</p>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:12px;padding:0px 0px 0px 32px;border-left:8px solid #C4521F">
+      <p style="font-size:30px;line-height:1.5">agents reliably skew positive<br>when grading their own work.</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">エージェントは、自分が作ったものを採点すると決まって高く評価する</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:0px 0px 0px 32px;border-left:8px solid #1F6F78">
+      <p style="font-size:30px;line-height:1.5">A fresh context improves code review …</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">新しいコンテキストの Claude は、<br>直前に書いたコードに偏らずにレビューできる</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:20px 36px;background:#1C2430">
+    <p style="font-size:28px;line-height:1.6;color:#F6F3EC">講師の PC では、確認のサブエージェントが不一致を 1 件見つけ、Claude はその事実を資料から外した。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Harness design for long-running apps(anthropic.com/engineering)/ Best practices(code.claude.com)</p>
+  <aside>[0:40] Skill が動いている待ち時間に話す。左の英文はハーネスの記事、右の英文は Best practices からの引用。成果物を確かめるときは、別のセッションかサブエージェントに成果物だけを渡す。Best practices は、書くセッションとレビューするセッションを分ける例を載せている。research-deck の手順 3 は、調査をしていないサブエージェントに、セッション B の役割をさせている。講師の PC で 2026-10-08 に実行した 1 回目と 3 回目は、確認のサブエージェントが不一致を 1 件ずつ見つけ、Claude はその事実を資料から外した。確かめる役を置かなければ、この 2 件は資料に入っていた。</aside>
+</section>

@@ -1,0 +1,28 @@
+<section id="cost" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">5　振り返り</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">並列にすると、使うトークンと費用が増える</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px 0px 0px 0px;border-top:8px solid #C4521F">
+      <p style="font-family:'Shippori Mincho';font-size:96px;font-weight:700;line-height:1.1;color:#C4521F">約 7 倍</p>
+      <p style="font-size:30px;font-weight:700;line-height:1.5">Agent teams</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">チームメイトが plan mode で動くときの<br>トークン量を、標準のセッションと比べた値</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px 0px 0px 0px;border-top:8px solid #C4521F">
+      <p style="font-family:'Shippori Mincho';font-size:96px;font-weight:700;line-height:1.1;color:#C4521F">約 15 倍</p>
+      <p style="font-size:30px;font-weight:700;line-height:1.5">マルチエージェント</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">Anthropic の調査システムの<br>トークン量を、チャットと比べた値</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px 0px 0px 0px;border-top:8px solid #1F6F78">
+      <p style="font-family:'Shippori Mincho';font-size:96px;font-weight:700;line-height:1.1;color:#1F6F78">$9→$200</p>
+      <p style="font-size:30px;font-weight:700;line-height:1.5">エージェント 1 体 → 3 体の構成</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">同じ依頼を実行した費用。<br>時間は 20 分から 6 時間に増えた</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:0px 0px 0px 32px;border-left:8px solid #1C2430">
+    <p style="font-size:30px;line-height:1.6">並列は、独立した作業に分けられるタスクに使う。<br>分けられないタスクは 1 つのセッションで進める。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Manage costs(code.claude.com)/ multi-agent research system / harness design(anthropic.com/engineering)</p>
+  <aside>[1:15] research-deck は、1 回の実行でサブエージェントを 5 つ使う。3 つの数字は Anthropic の公開資料に載っている。左は公式ドキュメント「Manage costs」、中央は調査システムの記事、右はハーネスの記事の表。右の表では、エージェント 1 体は 20 分で 9 ドル、planner・generator・evaluator の 3 体の構成は 6 時間で 200 ドルかかった。記事は 3 体の構成を "over 20x more expensive, but the difference in output quality was immediately apparent" と書いている。予定より遅れていたら、このスライドは表示するだけにして次へ進む。</aside>
+</section>
