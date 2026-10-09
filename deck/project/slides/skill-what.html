@@ -1,0 +1,35 @@
+<section id="skill-what" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">2　Skill の中身</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">Skill は Claude が使うときだけ読む手順書</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:860px 1fr;gap:64px">
+    <div style="display:flex;flex-direction:column;gap:4px;padding:36px 40px;background:#1C2430">
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;opacity:0.6;white-space:nowrap">~/.claude/skills/minutes/SKILL.md</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">---</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">name: minutes</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F2B28F;white-space:nowrap">description: 会議のメモを議事録にまとめるときに使う。</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F2B28F;white-space:nowrap">&#160;&#160;メールの下書きには使わない。</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">---</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">1. 決定事項を先頭に書く</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">2. 宿題には担当と期限を付ける</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.6;color:#F6F3EC;white-space:nowrap">3. 発言の経過は載せない</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:32px;justify-content:center">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5">依頼に関係があるとき、Claude が自分で使う</p>
+        <p style="font-size:24px;line-height:1.6;color:#5B6470">/minutes と入力して呼び出すこともできる</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5">Claude は使うときに本文を読む</p>
+        <p style="font-size:24px;line-height:1.6;color:#5B6470">長い資料を入れても、使うまではコンテキストを<br>ほとんど消費しない</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5;color:#C4521F">Skill を作るタイミング</p>
+        <p style="font-size:24px;line-height:1.6;color:#5B6470">同じ指示・チェックリスト・手順を<br>何度もチャットに貼っているとき</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Skills(code.claude.com/docs/en/skills)。左の SKILL.md は説明用に作成した</p>
+  <aside>[0:15] 実習の前に、Skill の仕組みを説明する。Skill は SKILL.md というファイル 1 つでできている。2 本の「---」に挟まれた部分は、Skill をいつ使うかを Claude に伝える。その下の部分は、Claude が従う手順を書く。左の SKILL.md は説明用に作成したもので、議事録のまとめ方を書いている。Skill を作るタイミングは、公式ドキュメントの記述に沿って書いた。</aside>
+</section>

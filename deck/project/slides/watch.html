@@ -1,0 +1,28 @@
+<section id="watch" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">3　実習 1</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">待っている間に画面に出る 3 つの表示</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#ECE7DB;border-top:8px solid #C4521F;height:340px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">手順 2</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">同時に動く</h3>
+      <p style="font-size:30px;line-height:1.5">画面の下にサブエージェントが<br>4 つ並び、トークンが増える</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#ECE7DB;border-top:8px solid #C4521F;height:340px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">手順 2 のあと</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">要約が返る</h3>
+      <p style="font-size:30px;line-height:1.5">問いごとに、事実の件数と<br>保存先が画面に出る</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px;padding:40px;background:#ECE7DB;border-top:8px solid #1F6F78;height:340px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#1F6F78">手順 3 のあと</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:40px;font-weight:700;line-height:1.3">確かめた結果が出る</h3>
+      <p style="font-size:30px;line-height:1.5">一致・不一致・開けないの<br>件数が画面に出る</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:0px 0px 0px 32px;border-left:8px solid #1C2430">
+    <p style="font-size:30px;line-height:1.6">3 つとも Claude Code の画面に出る。auto モードでは、権限の確認は出ない。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Sub-agents(code.claude.com/docs/en/sub-agents)、配布した SKILL.md</p>
+  <aside>[0:30] 各自の PC で Skill が動いている間に、このスライドを表示する。この間は何も入力せず、Claude Code の画面を見てもらう。1 つ目は、手順 2 で 4 つのサブエージェントが画面の下に並んで動く様子。サブエージェントごとに、動いている時間とトークンの数が出る。2 つ目は、4 つの調査が終わったときの表示で、問いごとに事実の件数と保存先のファイル名が出る。サブエージェントは別のコンテキストで調べ、元のセッションには 5 行以内の要約を返している。3 つ目は、手順 3 の確認が終わったときの表示。講師の PC で 2026-10-08 に 2 回実行したときは、1 回目が一致 20 件、不一致 1 件、開けない 4 件で、2 回目が一致 30 件、不一致 0 件、開けない 1 件だった。講師の PC で 2026-10-09 に auto モードで実行したときは、権限の確認が 1 件も出ず、14 分 8 秒で .pptx ができた。確認の結果は一致 32 件、不一致 0 件、開けない 0 件だった。2026-10-08 の 1 回目の不一致の 1 件は、調査のファイルに「第2次補正予算」と書かれ、出所のページには「第2次」の数字がなかった。</aside>
+</section>

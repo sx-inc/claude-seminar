@@ -1,0 +1,40 @@
+<section id="hook-code" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:36px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Hook にする</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">Hook の設定は settings.json に書く</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1220px 1fr;gap:44px">
+    <div style="display:flex;flex-direction:column;padding:28px 36px;background:#1C2430">
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;opacity:0.6;white-space:nowrap">.claude/settings.json</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">{</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;"hooks": {</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F2B28F;white-space:nowrap">&#160;&#160;&#160;&#160;"PreToolUse": [</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;{</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F2B28F;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"matcher": "Edit|Write",</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"hooks": [{</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "command",</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F2B28F;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/protect-files.sh"</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}]</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;&#160;&#160;}</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;&#160;&#160;]</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">&#160;&#160;}</p>
+      <p style="font-family:'JetBrains Mono';font-size:24px;line-height:1.45;color:#F6F3EC;white-space:nowrap">}</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;justify-content:center">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <p style="font-size:30px;font-weight:700;color:#C4521F">いつ動くか</p>
+        <p style="font-size:24px;line-height:1.6">PreToolUse は、ツールを<br>使う直前に動く</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <p style="font-size:30px;font-weight:700;color:#C4521F">どのツールで動くか</p>
+        <p style="font-size:24px;line-height:1.6">matcher は、編集と<br>書き込みを指定している</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <p style="font-size:30px;font-weight:700;color:#C4521F">何を実行するか</p>
+        <p style="font-size:24px;line-height:1.6">command のスクリプトが<br>exit 2 で終わると、<br>Claude Code は操作を止める</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Automate workflows with hooks(code.claude.com/docs/en/hooks-guide)</p>
+  <aside>Claude に「.env を編集できないようにする Hook を設定して」と入力すると、Claude は .claude/settings.json にこの設定を書く。設定は、いつ動くか、どのツールで動くか、何を実行するかの 3 つを読む。公式ドキュメントのスクリプトは jq を使う。Hook は、やりたいことを伝えると Claude が書く。</aside>
+</section>

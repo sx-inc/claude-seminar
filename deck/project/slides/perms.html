@@ -1,0 +1,34 @@
+<section id="perms" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Claude Code チームの使い方</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">権限の確認が出る回数を減らす</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:640px 1fr;gap:80px">
+    <div style="display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-family:'Shippori Mincho';font-size:96px;font-weight:700;line-height:1.1;color:#C4521F">93%</p>
+        <p style="font-size:30px;line-height:1.5">利用者が権限の確認を<br>承認している割合</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-family:'Shippori Mincho';font-size:96px;font-weight:700;line-height:1.1;color:#1F6F78">84%</p>
+        <p style="font-size:30px;line-height:1.5">サンドボックスの導入で<br>減った権限の確認の割合</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:8px;padding:28px 36px;background:#ECE7DB">
+        <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/permissions</p>
+        <p style="font-size:30px;line-height:1.5">よく使う安全なコマンドを先に許可し、<br>チームの設定ファイルに保存する</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:28px 36px;background:#ECE7DB">
+        <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">/sandbox</p>
+        <p style="font-size:30px;line-height:1.5">Claude が操作できる範囲を決める。<br>範囲内の操作は確認を省いて実行する</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:28px 36px;background:#ECE7DB">
+        <p style="font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#1F6F78">auto mode</p>
+        <p style="font-size:30px;line-height:1.5">バックグラウンドで安全性を検査しながら作業を進める</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Claude Code auto mode / Claude Code sandboxing(anthropic.com/engineering)/ Permission modes(code.claude.com)</p>
+  <aside>93% は auto mode の記事、84% はサンドボックスの記事に載っている Anthropic 社内の数字。「Claude Code power user tips」は、/permissions でよく使う安全なコマンドを先に許可する方法を勧めている。公式ドキュメントの表は、bypassPermissions を使う場所を「隔離したコンテナと VM だけ」としている。</aside>
+</section>

@@ -1,0 +1,33 @@
+<section id="skill-desc" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Skill にする</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">Skill を使うかどうかは description で決まる</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1040px 1fr;gap:64px">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <p style="font-size:24px;font-weight:700;color:#5B6470;letter-spacing:2px">Anthropic が公開している xlsx Skill の description(抜粋)</p>
+      <div style="display:flex;flex-direction:column;gap:12px;padding:28px 32px;background:#ECE7DB;border-left:8px solid #1F6F78">
+        <p style="font-size:24px;font-weight:700;color:#1F6F78">使う場面</p>
+        <p style="font-family:'JetBrains Mono';font-size:30px;line-height:1.5">Use this skill any time a spreadsheet file is the primary input or output.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;padding:28px 32px;background:#ECE7DB;border-left:8px solid #C4521F">
+        <p style="font-size:24px;font-weight:700;color:#C4521F">使わない場面</p>
+        <p style="font-family:'JetBrains Mono';font-size:30px;line-height:1.5">Do NOT trigger when the primary deliverable is a Word document …</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:32px;justify-content:center">
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5">Claude は最初に<br>description だけを読む</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5">使う場面と使わない場面を<br>両方書く</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <p style="font-size:30px;font-weight:700;line-height:1.5">1,536 字を超えた分は<br>切り捨てられる</p>
+        <p style="font-size:24px;line-height:1.6;color:#5B6470">重要な条件を先頭に書く</p>
+      </div>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Skills(code.claude.com/docs/en/skills)/ github.com/anthropics/skills の xlsx</p>
+  <aside>作った Skill が使われないときは、最初に description を見直す。Claude は最初に description だけを読み、Skill を使うと決めたあとで本文を読む。Anthropic が公開している xlsx の Skill は、使う場面と使わない場面を両方書いている。description と when_to_use は、合わせて 1,536 字を超えた分が切り捨てられる。</aside>
+</section>

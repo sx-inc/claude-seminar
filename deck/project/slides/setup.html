@@ -1,0 +1,45 @@
+<section id="setup" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">1　準備</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">配布したフォルダで Claude Code を起動する</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">1</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:36px;font-weight:700;line-height:1.3">展開する</h3>
+      <p style="font-size:26px;line-height:1.5">claude-seminar.zip を<br>ダウンロードして展開する</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">2</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:36px;font-weight:700;line-height:1.3">claude を起動する</h3>
+      <p style="font-size:26px;line-height:1.5">README.txt がある<br>フォルダで claude と<br>入力する</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">3</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:36px;font-weight:700;line-height:1.3">フォルダを信頼する</h3>
+      <p style="font-size:26px;line-height:1.5">下向きの矢印キーで<br>Yes, I trust this folder<br>を選び、Enter を押す</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px;background:#ECE7DB;height:290px">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F">4</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:36px;font-weight:700;line-height:1.3">2 つを確かめる</h3>
+      <p style="font-size:26px;line-height:1.5">画面の下に auto mode on<br>/ の一覧に research-deck</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column">
+    <p style="font-size:24px;font-weight:700;color:#5B6470;letter-spacing:2px;padding:0px 0px 8px">手順 2 で、README.txt があるフォルダをターミナルで開く方法</p>
+    <div style="display:grid;grid-template-columns:320px 1fr;gap:32px;padding:14px 0px;border-top:2px solid #1C2430;align-items:center">
+      <p style="font-size:30px;font-weight:700">Mac</p>
+      <p style="font-size:30px;line-height:1.5">ターミナルに cd と空白を入力し、フォルダをドラッグして Enter を押す</p>
+    </div>
+    <div style="display:grid;grid-template-columns:320px 1fr;gap:32px;padding:14px 0px;border-top:2px solid #D3CCBC;align-items:center">
+      <p style="font-size:30px;font-weight:700">Windows</p>
+      <p style="font-size:30px;line-height:1.5">フォルダを開き、アドレスバーに powershell と入力して Enter を押す</p>
+    </div>
+    <div style="display:grid;grid-template-columns:320px 1fr;gap:32px;padding:14px 0px;border-top:2px solid #D3CCBC;border-bottom:2px solid #1C2430;align-items:center">
+      <p style="font-size:30px;font-weight:700">Windows + WSL</p>
+      <p style="font-size:30px;line-height:1.5">フォルダを開き、アドレスバーに wsl と入力して Enter を押す</p>
+    </div>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">zip: github.com/sx-inc/claude-seminar の Releases　出所: Skills、Permission modes(code.claude.com/docs/en)</p>
+  <aside>[0:05] この部は 10 分。claude-seminar.zip は、github.com/sx-inc/claude-seminar の Releases からダウンロードする。直接の URL は https://github.com/sx-inc/claude-seminar/releases/latest/download/claude-seminar.zip 。zip には、作業用のフォルダが入っている。Skill は、フォルダの中の .claude/skills/research-deck/SKILL.md にある。Claude Code は、起動したフォルダの .claude/skills を読むので、Mac、Windows、WSL のどれでも手順は同じになる。各自が zip を展開し、README.txt があるフォルダで claude を起動する。ターミナルでフォルダを開く方法は、下の表と README.txt に書いてある。Windows の「すべて展開」を使うと、claude-seminar フォルダの中にもう 1 つ claude-seminar フォルダができる。起動するのは、README.txt があるほうのフォルダ。WSL を使う人も、zip は Windows のエクスプローラーで展開する。Windows 側のフォルダにあれば、できあがった .pptx を PowerPoint で開ける。初めて起動するフォルダでは、フォルダを信頼するかを選ぶ画面が出る。最初に選ばれているのは No, exit なので、下向きの矢印キーで Yes, I trust this folder を選んでから Enter を押す。起動したら、画面の下に auto mode on と出ていることを確かめる。auto モードでは、権限の確認を Claude Code の分類器が代わりに判定する。Permission modes のページには、v2.1.283 以降は対話のセッションが auto モードで始まると書いてある。auto mode on と出ていない人は、Shift+Tab を押して auto mode on に切り替える。切り替えても出ない人は、claude を終了し、claude update で新しい版にしてから、claude --permission-mode auto と入力して起動し直す。同じページには、組織の管理者が auto モードを止められることも書いてある。その PC では auto モードを使えないので、権限の確認を読んで 1 件ずつ許可してもらう。次に / を入力し、一覧に research-deck があることを確かめる。一覧に出ない人がいたら、講師は、起動したフォルダに README.txt があるかを見る。講師の PC で 2026-10-08 に試したときは、README.txt があるフォルダで起動すると一覧に出て、1 つ上のフォルダで起動すると出なかった。pptx の Skill を入れる手順は任意で、入れていない PC でも research-deck は .pptx を作る。</aside>
+</section>

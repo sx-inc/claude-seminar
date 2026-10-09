@@ -1,0 +1,33 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-08T21:50:22+09:00" },
+  "lists": "css",
+  "title": "Claude Code セミナー 20261009",
+  "order": [
+    "cover", "purpose", "why", "goal", "flow",
+    "setup",
+    "skill-what", "deck-skill",
+    "sec1", "run", "watch", "parallel", "reviewer",
+    "sec2", "remix",
+    "cost", "hook-examples", "next", "sources",
+    "verify", "plan", "perms",
+    "places", "ask-force", "claudemd",
+    "skill-desc", "skill-examples", "skill-make",
+    "hook-life", "hook-code", "subagent"
+  ],
+  "sections": {
+    "intro": { "description": "今日やること、役割を分ける理由、今日のゴール、90 分の進め方を示す。", "start": "cover" },
+    "setup": { "description": "配布したフォルダで Claude Code を起動し、Skill が一覧にあることを確かめる。", "start": "setup" },
+    "skill": { "description": "Skill の仕組みと、配布した Skill が進める 6 つの手順を示す。", "start": "skill-what" },
+    "lab1": { "description": "実習 1。配布した Skill を実行し、待ち時間にサブエージェントの仕組みを説明する。", "start": "sec1" },
+    "lab2": { "description": "実習 2。Skill を直して、自分の業務のテーマで実行する。", "start": "sec2" },
+    "close": { "description": "費用、Hook、明日からやる 3 つの手順、出典を示す。", "start": "cost" },
+    "appendix": { "description": "付録。Claude Code チームの使い方、機能の選び方、Skill と Hook の作り方を説明するスライド。", "start": "verify" }
+  },
+  "faces": {
+    "shippori-mincho": { "family": "Shippori Mincho", "href": "https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap" },
+    "noto-sans-jp": { "family": "Noto Sans JP", "href": "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" },
+    "jetbrains-mono": { "family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" }
+  },
+  "designSystems": []
+}

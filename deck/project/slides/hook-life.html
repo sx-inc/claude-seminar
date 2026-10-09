@@ -1,0 +1,43 @@
+<section id="hook-life" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　Hook にする</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">Hook は決まった時点で必ず動く</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;gap:20px">
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0px 0px 0px;border-top:8px solid #1C2430">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;white-space:nowrap">SessionStart</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">会話を始めたとき、<br>再開したとき</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0px 0px 0px;border-top:8px solid #1C2430">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;white-space:nowrap">UserPromptSubmit</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">利用者が指示を<br>送ったとき</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0px 0px 0px;border-top:8px solid #C4521F">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F;white-space:nowrap">PreToolUse</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">ツールを使う直前。<br>Hook は操作を止められる</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0px 0px 0px;border-top:8px solid #C4521F">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;color:#C4521F;white-space:nowrap">PostToolUse</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">ツールを使った直後</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding:28px 0px 0px 0px;border-top:8px solid #1C2430">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;white-space:nowrap">Stop</p>
+      <p style="font-size:24px;line-height:1.6;color:#5B6470">Claude が応答を<br>終えるとき</p>
+    </div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div style="display:flex;gap:24px;align-items:center;padding:20px 28px;background:#ECE7DB">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;white-space:nowrap">Notification</p>
+      <p style="font-size:24px;color:#5B6470">Claude が入力を待っているとき</p>
+    </div>
+    <div style="display:flex;gap:24px;align-items:center;padding:20px 28px;background:#ECE7DB">
+      <p style="font-family:'JetBrains Mono';font-size:24px;font-weight:700;white-space:nowrap">PreCompact</p>
+      <p style="font-size:24px;color:#5B6470">会話を要約する直前</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:0px 0px 0px 32px;border-left:8px solid #C4521F">
+    <p style="font-size:30px;line-height:1.6">Hook は、Claude の判断に関係なく Claude Code が実行する。</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Automate workflows with hooks(code.claude.com/docs/en/hooks-guide)。イベントは一部だけを載せた</p>
+  <aside>Hook は、決まった時点で Claude Code が実行するコマンド。上の 5 つは、1 回のやり取りで起きる順に左から並べた。スライド 16 の例のうち 2 つが、橙色の時点を使う。公式ドキュメントは Hook を、LLM の選択に頼らずに特定の動作を必ず起こす仕組みと説明している。</aside>
+</section>

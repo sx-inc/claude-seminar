@@ -1,0 +1,23 @@
+<section id="ask-force" style="background:#F6F3EC;color:#1C2430;font-family:'Noto Sans JP';padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <p style="font-size:24px;font-weight:700;color:#C4521F;letter-spacing:2px">付録　使う機能を選ぶ</p>
+    <h2 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.25">指示を書くと依頼になり、Hook は強制になる</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:20px;padding:40px;background:#ECE7DB">
+      <p style="font-size:24px;font-weight:700;color:#5B6470;letter-spacing:2px">CLAUDE.md・Skill に書く</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.2">依頼</h3>
+      <p style="font-size:30px;line-height:1.6">「.env を編集しない」と書く。<br>Claude はこの指示を破ることがある。</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;padding:40px;background:#1C2430">
+      <p style="font-size:24px;font-weight:700;color:#F6F3EC;letter-spacing:2px">Hook で止める</p>
+      <h3 style="font-family:'Shippori Mincho';font-size:64px;font-weight:700;line-height:1.2;color:#F6F3EC">強制</h3>
+      <p style="font-size:30px;line-height:1.6;color:#F6F3EC">Hook を設定する。<br>Hook は .env の編集を直前で必ず止める。</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;padding:0px 0px 0px 32px;border-left:8px solid #C4521F">
+    <p style="font-size:30px;line-height:1.6">An instruction like "never edit .env" in CLAUDE.md or a skill is a request, not a guarantee. A PreToolUse hook that blocks the edit is enforcement.</p>
+  </div>
+  <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5B6470">出所: Extend Claude Code(code.claude.com/docs/en/features-overview)</p>
+  <aside>下の英文は公式ドキュメントからの引用。CLAUDE.md や Skill に書いた指示は依頼で、保証にはならない。編集を止める PreToolUse の Hook は強制になる。どちらを使うかは、「この指示がたまに破られても困らないか」で決める。困る指示は Hook にする。</aside>
+</section>
